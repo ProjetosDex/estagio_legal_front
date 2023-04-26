@@ -108,7 +108,7 @@ export default {
     padding: 0 20px;
     box-sizing: border-box;
     font-size: 14px;
-    color: #6a6a6a;
+    color: #FFFFFF;
     transition: all 0.3s ease;
 > div {
       display: flex;
@@ -131,7 +131,7 @@ export default {
       width: fit-content;
     }
     &:hover {
-      background: #deedff;
+      background: #deedff68;
       cursor: pointer;
     }
   }

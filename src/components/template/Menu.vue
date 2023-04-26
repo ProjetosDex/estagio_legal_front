@@ -1,5 +1,8 @@
+
 <template>
   <div class="menu" :class="{ 'small-menu': smallMenu }">
+    <img src="@/assets/Logo-IFPA.png" alt="logo-ifpa">
+    
     <MenuItem
       v-for="(item, index) in menuTree"
       :key="index"
@@ -72,6 +75,10 @@ export default {
            label: "Horas Complementares",
             icon: "workspace_premium",
           },
+          {
+           label: "Projeto de Pesquisa",
+            icon: "workspace_premium",
+          },
         ]
       },
       {
@@ -91,7 +98,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+img{
+  transition: all .5s ease;
+  width: 28%;
+  height: 18%;
+  left: 36.91%;
+  right: 36.44%;
+  top: 0%;
+  bottom: 87.65%;
+}
 .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   position: fixed;
   height: 100vh;
   width: 240px;
@@ -120,9 +140,14 @@ export default {
   &.small-menu {
     overflow: inherit;
     width: 60px;
-    padding-top: 50px;
+    padding-top: 10px;
     i {
-      left: 20px;
+      left: 12px;
+    }
+    img{
+      width: 50%;
+      height: 8%;
+      transition: all .3s ease;
     }
   }
 }
