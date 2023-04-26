@@ -33,39 +33,50 @@ export default {
       {
         label: "Home",
         icon: "home",
+
+      },
+      {
+        label: "Inicio de Estágio",
+        icon: "post_add",
         children: [
           {
-            label: "level 1.1",
-            children: [
-              {
-                label: "level 1.1.1",
-                children: [
-                  {
-                    label: "level 1.1.1.1"
-                  }
-                ]
-              }
-            ]
+            label: "Estágio Obrigatório",
+            icon: "event_available",
           },
           {
-            label: "level 1.2"
-          }
+            label: "Estágio Não Obrigatório",
+            icon: "calendar_today",
+
+          },
         ]
       },
       {
-        label: "Dashboard",
-        icon: "dashboard",
+        label: "Fim de Estágio",
+        icon: "task",
         children: [
           {
-            label: "level 2.1",
+           label: "Emitir Atestado de Estágio",
+            icon: "workspace_premium",
           },
-          {
-            label: "level 2.2"
-          },
-          {
-            label: "level 2.3"
-          }
         ]
+      },
+      {
+        label: "Creditar horas",
+        icon: "library_books",
+        children: [
+          {
+           label: "Estágio Obrigatório",
+            icon: "workspace_premium",
+          },
+          {
+           label: "Horas Complementares",
+            icon: "workspace_premium",
+          },
+        ]
+      },
+      {
+        label: "Acompanhar Processo",
+        icon: "schedule"
       },
       {
         label: "Settings",

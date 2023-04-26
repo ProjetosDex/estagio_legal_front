@@ -140,6 +140,10 @@ export default {
     left: calc(100% + 6px);
     transition: height 0.3s ease;
     overflow: hidden;
+    background: linear-gradient(108.65deg, #FFFFFF 1.89%, rgba(255, 255, 255, 0.74) 100%);  
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+
     &.small-menu {
       width: fit-content;
       position: absolute;
