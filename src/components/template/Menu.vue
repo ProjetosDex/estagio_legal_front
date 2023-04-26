@@ -9,7 +9,8 @@
       :depth="0"
       :smallMenu="smallMenu"
     />
-    <i @click="smallMenu = !smallMenu" class="material-icons">menu</i>
+    <i @click="smallMenu = !smallMenu" class="expand material-icons" :class="{ expand: expanded }">arrow_circle_right</i>
+    
   </div>
 </template>
 
@@ -19,6 +20,14 @@ import MenuItem from '@/components/template/MenuItem.vue';
 export default {
   name: 'recursive-menu',
   data: () => ({
+    watch:{
+      smallMenu(value){
+        if(value){
+          this.expanded = this.expanded == true ? true : false;
+        }
+      }
+    },
+    expanded: false,
     smallMenu: false,
     menuTree: [
       {
@@ -80,15 +89,23 @@ export default {
   border-right: 1px solid #ececec;
   transition: all .3s ease;
   overflow: auto;
+  background-color: #5CB85C;
+
   i {
     position: fixed;
-    left: 250px;
-    font-size: 20px;
-    top: 15px;
+    left: 100px;
+    font-size: 35px;
+    bottom: 15px;
     user-select: none;
     cursor: pointer;
     transition: all .3s ease;
+    color: #e2d4d4;
+    &.expand {
+      transform: rotate(180deg);
+    }
+    
   }
+
   &.small-menu {
     overflow: inherit;
     width: 60px;

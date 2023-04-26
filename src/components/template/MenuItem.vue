@@ -110,7 +110,7 @@ export default {
     font-size: 14px;
     color: #6a6a6a;
     transition: all 0.3s ease;
-    > div {
+> div {
       display: flex;
       align-items: center;
       gap: 10px;
